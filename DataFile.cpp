@@ -107,7 +107,7 @@ double DataFile::FindClosest(double target)
     else if(target == winRate[winRate.size() - 1]) return winRate[winRate.size() - 2];
     else
     {
-        for (int i = 0; i < winRate.size(); i++)
+        for (int i = 1; i < winRate.size() - 2; i++)
         {
             double previous = winRate[i - 1];
             double after = winRate[i + 1];
